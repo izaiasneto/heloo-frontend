@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import CupomPage from './containers/CupomPage'
+
+import './assets/styles/global.css'
+import './app.css'
+
+function app() {
+    
+    return(
+         <div id='page' className='container'>
+            <CupomPage/>      
+        </div>
+            
+    )
+    
 }
 
-export default App;
+
+export default app;

@@ -1,0 +1,30 @@
+.inputForm input, .inputForm select {
+    height: 30px;
+    position: relative;
+    border-radius: 0.8rem;
+    background: #fff;
+    border: 1px solid #558ecc;
+    color: #2b4f7c;
+    outline: 0;
+    padding: 0 6px;
+    margin-top: 7px;
+    margin-left: 3%;
+    font-size: 16px;
+}
+
+.inputForm .labelForm {
+    color: #2b4f7c;
+    font-family: Poppins;
+    
+}
+
+
+.inputForm input:focus {
+    outline: none;
+    background-color: #ccc;
+}
+
+.inputForm .Invalid {
+    border: 1px solid red;
+    background-color: #FDA49A;
+}

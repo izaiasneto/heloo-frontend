@@ -1,0 +1,40 @@
+#cupom-list {
+    background-color: rgb(234 234 234);
+    padding: 11px 1px;
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+
+#cupom-list th, td { 
+    text-align: center;
+    font-size:  9px;
+    border: 1px solid #a9a6a62e;
+}
+
+
+#cupom-list thead {
+    background-color: #0606069e;
+    color: #ffffff94;
+}
+
+#cupom-list thead tr {
+    width: 100%;
+    height: 60px;
+    font-family: Poppins;
+    
+}
+
+@media(min-width: 700px){
+    
+    #cupom-list  {
+        padding: 20px;
+    }
+    
+    #cupom-list th, td {
+        font-size: 15px;
+    
+    }
+
+}

@@ -1,0 +1,41 @@
+.cupomForm {
+    text-align: center;
+}
+
+.cupomForm h4 {
+    font-size: 30px;
+    color: #112548;
+    margin-bottom: 14px;
+}
+
+.cupomForm button {
+        background-color: #558fcc;
+        color: #112548;
+        font-size: 12px;
+        font-weight: 700;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+        border: 0;
+        padding: 10px;
+        cursor: pointer;
+        width: 129px;
+        height: 100%;
+        margin-top: 22px;
+        margin-bottom: 22px;
+}
+
+.cupomForm button:disabled {
+    background-color: #adadad;
+    color: #2f2f2f66;
+}
+.cupomForm p{
+    color: red;
+    font-size: 10px;
+    font-family: Archivo;
+}
+    
+.cupomForm button :hover {
+        background-color: #2d4660;
+        color: #b9e5f7; 
+    
+}
