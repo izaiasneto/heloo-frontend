@@ -10,7 +10,7 @@
 
 - Clone esse projeto
 
-<pre>git clone https://github.com/izaiasneto/NLW_2.git</pre>
+<pre>git clone https://github.com/izaiasneto/heloo-frontend.git</pre>
 
 
 # Como executar o Front-End
