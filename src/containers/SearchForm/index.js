@@ -50,21 +50,21 @@ class SearchForm extends Component {
 
     inputChangedHandler = (event, inputIdentifier, inputHandler) => {
         
-        if(!this.props.isLoading){
-            const updatedSearchForm = { ...this.state.searchForm}
+        
+        const updatedSearchForm = { ...this.state.searchForm}
         
             
-            const updatedFormElement = {
-                ...updatedSearchForm[inputIdentifier]
-            };
+        const updatedFormElement = {
+            ...updatedSearchForm[inputIdentifier]
+        };
 
-            updatedFormElement.value = event.target.value;
-            updatedSearchForm[inputIdentifier] = updatedFormElement;
+        updatedFormElement.value = event.target.value;
+        updatedSearchForm[inputIdentifier] = updatedFormElement;
 
-            this.setState({ searchForm: updatedSearchForm });
+        this.setState({ searchForm: updatedSearchForm });
 
-            inputHandler(updatedSearchForm);
-        }
+        inputHandler(updatedSearchForm);
+        
     }
 
     
