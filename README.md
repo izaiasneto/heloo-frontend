@@ -1,7 +1,7 @@
 
 # GrCupons
 
-> Proffy é um aplicativo feito com o objetivo de gerenciar cupons. Por meio deste aplicativo, os usuários podem podem adicionar, editar, apagar e fazer uma busca entre os cupons. 
+> GrCupons é um aplicativo feito com o objetivo de gerenciar cupons. Por meio deste aplicativo, os usuários podem podem adicionar, editar, apagar e fazer uma busca entre os cupons. 
 
 # Como executar esse projeto
 
