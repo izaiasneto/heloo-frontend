@@ -93,7 +93,7 @@ class CupomPage extends Component{
                 })
                 .then(res => {
                     this.setState({
-                        displayCupons: res.data,
+                        displayCupons: res.data.slice().reverse(),
                         isLoading: false,
                     })
                     
