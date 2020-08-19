@@ -1,6 +1,7 @@
 main{
     background: #eee;
     border-radius: 5px;
+    text-align: center;
 }
 
 .search-container{
@@ -55,6 +56,9 @@ main{
     color: #b9e5f7; 
 }
 
+#loading {
+    font-family: Poppins;
+}
 
 
 @media(min-width: 700px){

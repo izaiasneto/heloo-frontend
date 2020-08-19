@@ -23,7 +23,7 @@ class CupomPage extends Component{
             isLoading: true,
             isModalVisible: false,
             isModalVisible2: false,
-            cupom: ''
+            cupom: []
         }
     }
     
@@ -34,7 +34,7 @@ class CupomPage extends Component{
                 
                 this.setState({
                     cupons :  res.data,
-                    displayCupons:  res.data.slice(0).reverse(),
+                    displayCupons:  res.data.slice().reverse(),
                     isLoading: false,
                 })
                 
@@ -54,30 +54,24 @@ class CupomPage extends Component{
         
     }
 
-    setModal2 = (id) => {
+    setModal2 = () => {    
+        this.setState({ isModalVisible2 :  false})      
+    }
 
-        console.log(id)
+    editCupom = (id) => {
 
-        if( this.state.isModalVisible2 === true){
-            this.setState({ isModalVisible2 :  false})
-            
-        } else {
-            this.setState({ isModalVisible2 : true})
+        this.setState({ isModalVisible2 : true})
 
-            let updatedDisplayCupom = [...this.state.cupons]
+        let updatedDisplayCupom = [...this.state.cupons]
 
-            var i = updatedDisplayCupom.findIndex(cupom => cupom._id === id)
+        var i = updatedDisplayCupom.findIndex(cupom => cupom._id === id)
 
-            const updatedFormElement = {
-                ...updatedDisplayCupom[i]
-            }
-
-            this.setState({cupom : updatedFormElement})
-
-            console.log(updatedFormElement)
+        const updatedFormElement = {
+            ...updatedDisplayCupom[i]
         }
 
-        
+        this.setState({cupom : updatedFormElement})
+             
     }
 
     inputCupomHandler = SearchForm => {
@@ -135,10 +129,10 @@ class CupomPage extends Component{
     }
 
     render(){
-        let cupons = <p>carregando...</p>;
+        let cupons = <p id="loading">Carregando...</p>;
 
         if(!this.state.loading){
-            cupons = <CupomList cupons={this.state.displayCupons} deleteCupom={this.deleteCupom} editCupom={this.setModal2}/>
+            cupons = <CupomList cupons={this.state.displayCupons} deleteCupom={this.deleteCupom} editCupom={this.editCupom}/>
                 
         } 
 
