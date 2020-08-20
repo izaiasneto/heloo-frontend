@@ -87,7 +87,6 @@ class CupomForm extends Component {
 
         //olhada
         formIsValid: false,
-        loading: false
     }
 
     cupomHandler = (event) => {
@@ -98,14 +97,7 @@ class CupomForm extends Component {
            value: this.state.CupomForm.value.value,
            date_max: this.state.CupomForm.date_max.value,
            situation:  this.state.CupomForm.situation.value,
-        }).then( res => {
-                this.setState( { loading: false } );
-                
-         })
-         .catch( error => {
-             console.log(error)
-            this.setState( { loading: false } );
-        } );
+        })
     }
 
     checkValidity(value, rules) {

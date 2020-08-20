@@ -34,7 +34,6 @@ class EditForm extends Component {
                 value: this.props.cupom.description,
                 validation: {
                     required: true,
-                    maxLength: 20
                 },
                 valid: true,
                 touched: false,
@@ -87,7 +86,6 @@ class EditForm extends Component {
 
         //olhada
         formIsValid: true,
-        loading: false,
     }
 
     cupomHandler = (event) => {
@@ -98,14 +96,7 @@ class EditForm extends Component {
            value: this.state.CupomForm.value.value,
            date_max: this.state.CupomForm.date_max.value,
            situation:  this.state.CupomForm.situation.value,
-        }).then( res => {
-                this.setState( { loading: false } );
-                
-         })
-         .catch( error => {
-             console.log(error)
-             this.setState( { loading: false } );
-        } );
+        })
     }
 
     checkValidity(value, rules) {
