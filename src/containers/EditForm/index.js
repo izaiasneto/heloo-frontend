@@ -18,8 +18,8 @@ class EditForm extends Component {
                 },
                 value: this.props.cupom.code,
                 validation: {
-                    required: false,
-                    isCupom: false,
+                    required: true,
+                    isCupom: true,
                 },
                 valid: true,
                 touched: false,
@@ -84,7 +84,7 @@ class EditForm extends Component {
             }      
         },
 
-        //olhada
+        
         formIsValid: true,
     }
 

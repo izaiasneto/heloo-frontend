@@ -85,7 +85,7 @@ class CupomForm extends Component {
             }      
         },
 
-        //olhada
+        
         formIsValid: false,
     }
 
