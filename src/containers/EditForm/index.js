@@ -20,8 +20,6 @@ class EditForm extends Component {
                 validation: {
                     required: false,
                     isCupom: false,
-                    minLength: 7,
-                    maxLength: 7
                 },
                 valid: true,
                 touched: false,
